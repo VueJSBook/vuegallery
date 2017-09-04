@@ -1,0 +1,20 @@
+<template>
+    <div class="container image-detail">
+      <div class="row">
+        <div class="col-sm-8 col-xs-12">
+          <img :src="selectedImage.imageLink" class="img-responsive">
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <h1>{{selectedImage.title}}</h1>
+          <p>{{selectedImage.description}}</p>
+        </div>
+      </div>
+    </div>
+</template>
+
+<script>
+  export default {
+    props: ['selectedImage']
+  }
+</script>
+
